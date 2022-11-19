@@ -90,7 +90,7 @@ header img {
 #sidebar_main{
     position: absolute;
     height: calc(100vh - 70px);
-    width: 70px;
+    width: 150px;
 }
 
 
@@ -101,10 +101,42 @@ header img {
 #content_main{
     overflow-y: auto;
     position: absolute;
-    left: 70px;
+    left: 150px;
     width: calc(100% - 70px);
     height: calc(100vh - 70px);
     width: 100%;
     border: 2px solid red;
 }
 
+/* sidebar */
+
+
+
+.row_side{
+    background-color: #051e34;
+    padding: 20px;
+    padding-right: 1.875rem;
+}
+    
+#sidebar ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+    padding-left: 0;
+}
+
+#sidebar_main a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#sidebar_main li{
+    list-style-type: none;
+    padding: .3em 0em;
+}
+
+.pd_lf0 {
+    padding-left: 0rem;
+  }
