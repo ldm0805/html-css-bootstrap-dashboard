@@ -171,10 +171,6 @@ header img {
     border-radius: 3em;
 }
 
-.fnt_size{
-    font-size: .7em;
-}
-
 .ms-badge{
     background-color: #051e3441;
     margin-left: .3em;
@@ -231,9 +227,13 @@ main {
     background-color: #aaa5a557;
 }
 
+#content_main span:hover{
+    cursor: pointer;
+}
+
 /* media */
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 576px){
 
     #sidebar_main{
         width: 140px;
@@ -244,5 +244,16 @@ main {
         width: calc(100% - 140px);
     }
     
-    
+    #content_main .offcanvas{
+        width: 50%;
+        transition: .5s linear;
+    }
+}
+
+@media screen and (max-width: 575px){
+
+    #content_main .offcanvas{
+        width: 100%;
+        transition: .5s linear;
+    }
 }
