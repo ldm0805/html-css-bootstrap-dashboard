@@ -32,6 +32,9 @@
     margin: 0em .3em;
 }
 
+.bg_head{
+    background-color: #f8f9fa;
+}
 /* Nav */
 
 #nav-container .row{
@@ -100,7 +103,7 @@ header img {
 #sidebar_main{
     position: absolute;
     height: calc(100vh - 70px);
-    width: 15%;
+    width: 70px;
     position: fixed;
 }
 
@@ -150,8 +153,9 @@ header img {
 #content_main{
     overflow-y: auto;
     position: absolute;
-    left: 15%;
-    width: calc(100% - 15%);
+    right: 0;
+    left: 70px;
+    width: calc(100% - 70px);
     height: calc(100vh - 70px);
     outline: 2px solid red;
 }
@@ -177,4 +181,80 @@ header img {
 .ms-badge{
     background-color: #051e3441;
     margin-left: .3em;
+}
+
+/* MAIN */
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.ms-container {
+    padding-top: 20px;
+    color: white;
+}
+
+.ms-w-60 {
+    width: auto;
+}
+
+.ms-w-100 {
+    width: 6.25rem;
+}
+
+.ms-w-150 {
+    width: 7.375rem;
+}
+
+
+.class-logo {
+    width: 25px;
+    margin-right: .625rem;
+}
+
+.table {
+    vertical-align: middle;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ms-btn-14 {
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: #f7f7f7;
+    color: #1c71e8;
+    border: 1px solid #1c71e8;
+}
+
+.ms-border-top {
+    border-top: none;
+}
+
+/* hover */
+
+#sidebar_main li:hover{
+    background-color: #6e6b6b57;
+
+}
+
+
+/* media */
+
+@media screen and (min-width: 992px){
+
+    #sidebar_main{
+        width: 140px;
+    }
+
+    #content_main{
+        left: 140px;
+        width: calc(100% - 140px);
+    }
+    
+    
 }
