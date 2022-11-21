@@ -108,7 +108,7 @@
 
           <main id="content_main">
             <div class="container-fluid">
-              <div class="row pb-3">
+              <div class="row bg_blue pb-3">
                 <div class="col-6 py-2 outline">
                   <div class="content d-flex align-items-center">
                     <h2 class="text-white">Boolean</h2>
@@ -119,7 +119,7 @@
                     <span class="badge rounded-pill ms-badge">3 app</span>
                     <i class="fa-solid fa-angles-right text-white m_r3"></i>
                     <span class="badge rounded-pill ms-badge d-lg-none d-xl-none d-xxl-none">+</span>
-                    <span class="badge rounded-pill ms-badge d-none d-lg-inline d-xl-inline d-xxl-inline">Boolean blog app</span>
+                    <span class="badge rounded-pill ms-badge d-none d-lg-inline d-xl-inline d-xxl-inline  ">Boolean blog app</span>
                     <span class="badge rounded-pill ms-badge d-none d-lg-inline d-xl-inline d-xxl-inline">Boolean blog app</span>
                     <span class="badge rounded-pill ms-badge d-none d-lg-inline d-xl-inline d-xxl-inline">Boolean blog app</span>
                   </div>
@@ -132,9 +132,72 @@
                   </div>
                 </div>
                 <div class="col-3 outline">
-                  <div class="content pt-2">
-                    <p class="fnt_size mb-1 text-white">Nuovo studente</p>
+                  <div class="content pt-2 d-flex align-items-center">
+                    <p class="fnt_size m-2 text-white">Nuovo studente</p>
+                    <div class="">
+                      <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">+</button>
+                      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                          <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Form</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                              <form class="row g-3">
+                                  <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                  </div>
+                                  <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                                    <input type="text" class="form-control" id="inputAddress">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">Città</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Stato</label>
+                                    <select id="inputState" class="form-select">
+                                      <option selected>Scegli...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-md-2">
+                                    <label for="inputZip" class="form-label">Cap</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                  </div>
+                                  <div class="col-12">
+                                    <div class="mb-3">
+                                      <label for="formFile" class="form-label">Foto</label>
+                                      <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                  </div>
+                                  <div class="col-12">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                                      <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                      </label>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                    <button type="submit" class="btn btn-warning">Svuota</button>
+                                  </div>
+                                </form>
+                          </div>
+                      </div>
+
                   </div>
+
+              </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
