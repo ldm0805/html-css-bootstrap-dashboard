@@ -238,6 +238,10 @@ main {
     cursor: pointer;
 }
 
+#content_main .btn-outline-primary:hover{
+    background-color: #aaa5a557;
+}
+
 /* media */
 
 @media screen and (min-width: 576px){
