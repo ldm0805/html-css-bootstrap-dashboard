@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
-        <title>Document</title>
+        <title>Esercizio: html-css-bootstrap-dashboard</title>
     </head>
         <body>
 
@@ -92,7 +92,9 @@
                       <ul class="pd_lf0">
                         <li>
                           <div class="admin">
-                              <a href="#"><i class="fa-solid fa-gear"></i> <span class="d-none d-lg-inline d-xl-inline d-xxl-inline">Admin</span></a>
+                              <a href="#">
+                                <i class="fa-solid fa-gear"></i> 
+                                <span class="d-none d-none d-sm-inline">Admin</span></a>
                           </div>
                         </li>
                       </ul>
@@ -128,23 +130,36 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-2 order-first order-md-last">
-                  <div class="content d-flex">
-                    <p class="m-2 text-white">Nuovo studente</p>
+                  <div class="content p-2 d-flex">
+                    <p class="text-white">Nuovo studente</p>
 
                     <!-- Off-canvas header -->
                     
                     <div class="content">
-                      <button class="btn btn-outline-primary text-white border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><span class="h4">+</span></button>
+                      <button class="btn btn-outline-primary text-white border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <span class="h4">+</span>
+                      </button>
                       <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                           <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Form</h5>
+                              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                           </div>
                           <div class="offcanvas-body">
                               <form class="row g-3">
+                                <div class="col-md-6">
+                                  <label class="form-label" for="inlineFormInputName">Nome</label>
+                                  <input type="text" class="form-control" id="inlineFormInputName">
+                                </div>
+                                <div class="col-md-6">
+                                  <label class="form-label" for="inlineFormInputSurname">Cogome</label>
+                                  <input type="text" class="form-control" id="inlineFormInputName">
+                                </div>
                                   <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
+                                    <label class="inputMail form-label" for="inlineFormInputGroupUsername">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text">@</div>
+                                      <input type="text" class="form-control" id="inlineFormInputGroupUsername">
+                                    </div>
                                   </div>
                                   <div class="col-md-6">
                                     <label for="inputPassword4" class="form-label">Password</label>
@@ -180,7 +195,7 @@
                                     <div class="form-check">
                                       <input class="form-check-input" type="checkbox" id="gridCheck">
                                       <label class="form-check-label" for="gridCheck">
-                                        Check me out
+                                        Seleziona per proseguire
                                       </label>
                                     </div>
                                   </div>
